@@ -1,0 +1,152 @@
+# Portfolio Website
+
+A dark, blueprint-inspired single-page portfolio built with **plain HTML, CSS and JavaScript**: no frameworks, no build step. It combines a technical grid aesthetic with smooth scroll-driven animation and a custom cursor.
+
+> **Live demo:** `<add your GitHub Pages / Netlify / Vercel link>`
+> **Author:** Faizan Shafi
+
+<!-- Add a screenshot or GIF here: ![Preview](assets/preview.png) -->
+
+---
+
+## Features
+
+- **Animated loading screen** with a progress bar that fades out after the page loads
+- **Custom cursor**: a lagging ring plus a precise dot, with an enlarged hover state on interactive elements
+- **Scroll progress bar** fixed at the top of the viewport
+- **Scroll-reveal animations** powered by `IntersectionObserver`
+- **Animated stat counters** that count up when they enter the viewport
+- **Side dot navigation** that highlights the current section and scrolls smoothly on click
+- **Hero "blueprint" graphic**: concentric rotating rings, glowing nodes, and a mouse-driven parallax effect
+- **Experience cards** and a **vertical roadmap timeline** with active/next states
+- **Fully responsive** layout with breakpoints at 1024px, 768px and 480px, plus a full-screen mobile menu
+- **Design tokens** defined as CSS custom properties for easy re-theming
+
+## Tech Stack
+
+| Area | Details |
+| --- | --- |
+| Markup | HTML5 |
+| Styling | CSS3: custom properties, Grid, Flexbox, `clip-path`, `backdrop-filter`, keyframe animations |
+| Behaviour | Vanilla JavaScript (ES6+), `IntersectionObserver`, `requestAnimationFrame` |
+| Fonts | [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk), [Space Mono](https://fonts.google.com/specimen/Space+Mono), [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts |
+
+## Project Structure
+
+Adjust the paths below to match your repository.
+
+```
+.
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+└── README.md
+```
+
+### Page sections
+
+| Section | Purpose |
+| --- | --- |
+| Hero | Headline, subtitle, call-to-action buttons, animated blueprint graphic |
+| Stats | Four animated counters |
+| About | Short bio and tech-stack tags |
+| Experience | Cards with company, product, period and responsibilities |
+| Roadmap | Timeline of milestones (`current`, `active`, `next` states) |
+| Contact | Large heading and contact link |
+| Footer | Credits and location line |
+
+## Getting Started
+
+No dependencies are required.
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/faizanshafi25/<your-repo>.git
+cd <your-repo>
+
+# 2. Open index.html in your browser
+#    or serve it locally:
+npx serve .
+# or
+python -m http.server 8000
+```
+
+Then visit `http://localhost:8000` (or the port shown).
+
+## Customisation
+
+### Theme
+
+All colours live in `:root` at the top of the stylesheet:
+
+```css
+:root {
+    --bg: #0a0a0f;
+    --surface: #12121a;
+    --border: rgba(255, 255, 255, 0.06);
+    --text: #e8e8ed;
+    --text-secondary: #6b6b7b;
+    --accent: #4f46e5;
+    --accent-glow: rgba(79, 70, 229, 0.15);
+    --cyan: #22d3ee;
+    --grid-color: rgba(255, 255, 255, 0.03);
+}
+```
+
+Change these values to re-theme the whole site.
+
+### Content
+
+- **Stats:** set the target number with `data-count` on the `.stat-number` element. The counter increments by one every 200 ms.
+- **Experience:** duplicate an `.exp-card` and edit the company, product, period and list items.
+- **Roadmap:** duplicate a `.roadmap-item`. Add `current` for the highlighted marker, and use `.status.active` or `.status.next` for the status label.
+- **Loader duration:** the loader hides after 2200 ms; change the timeout in the `load` listener (and the `loaderFill` animation length in CSS to match).
+
+### Required element hooks
+
+The JavaScript looks up these elements, so keep them in your HTML:
+
+| Selector | Used for |
+| --- | --- |
+| `#loader` | Loading screen |
+| `#cursor`, `#cursorDot` | Custom cursor |
+| `.hoverable` | Elements that trigger the cursor hover state |
+| `#scrollProgress` | Scroll progress bar |
+| `.scroll-reveal`, `.stat-item`, `.exp-card`, `.roadmap-item`, `.contact-heading`, `.contact-sub`, `.contact-link` | Scroll-reveal targets |
+| `section[id]` and `.side-nav-dot[data-section]` | Side navigation (the `data-section` value must match a section `id`) |
+| `#mobileBtn`, `#mobileMenu`, `.mobile-link` | Mobile menu |
+| `.blueprint-container` | Hero parallax |
+
+## Browser Support
+
+Works in current versions of Chrome, Edge, Firefox and Safari. It relies on `backdrop-filter`, `clip-path`, CSS `inset`, and `IntersectionObserver`.
+
+## Known Limitations & Roadmap
+
+- [ ] Respect `prefers-reduced-motion` by disabling heavy animations
+- [ ] Show the native cursor on touch devices and when `prefers-reduced-motion` is set (the page currently uses `cursor: none` globally)
+- [ ] Add keyboard focus styles for the side navigation dots and buttons
+- [ ] Add `aria-label` attributes to the mobile menu button
+- [ ] Self-host fonts to remove the Google Fonts dependency
+
+## Deployment
+
+The site is static, so it can be hosted anywhere:
+
+- **GitHub Pages:** *Settings → Pages → Deploy from branch → `main` / root*
+- **Netlify / Vercel:** import the repository; no build command needed, publish directory `/`
+
+## License
+
+Released under the [MIT License](LICENSE). *(Replace with your preferred license.)*
+
+## Contact
+
+- GitHub: [`@faizanshafi25`](https://github.com/faizanshafi25)
+- Email / LinkedIn: `<add the contact details you want public>`
+
+---
+
+Designed and built by **Faizan Shafi**, Srinagar, Jammu & Kashmir, India.
