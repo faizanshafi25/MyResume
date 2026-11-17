@@ -70,7 +70,7 @@ Resume-Templates/
 └── README.md
 ```
 
-*Folder names may vary depending on the actual repository structure.*
+
 
 ---
 
