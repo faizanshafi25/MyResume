@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan Shafi — BCA student learning web development</title>
+    <meta name="description"
+        content="Portfolio of Faizan Shafi, a BCA student in Srinagar, Kashmir learning front-end and full-stack web development.">
+    <meta name="theme-color" content="#0b3f49">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3f49'/%3E%3Ctext x='16' y='22.5' font-family='Arial,sans-serif' font-size='17' font-weight='700' text-anchor='middle' fill='%23f2b53a'%3EFS%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <a class="nav-logo" href="#hero">Faizan Shafi</a>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <p class="nav-status"><span class="status-dot" aria-hidden="true"></span>Open to opportunities</p>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu"
+                aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu" hidden>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-kicker">BCA student · Srinagar, Kashmir</p>
+                    <h1 class="hero-title" id="hero-title">Faizan Shafi</h1>
+                    <p class="hero-lead">
+                        I'm learning to build for the web. HTML and CSS are done, JavaScript is in progress, and
+                        full-stack development comes next.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#experience">See my experience</a>
+                        <a class="btn btn-outline" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+
+                <aside class="now-card" aria-label="What I'm doing right now">
+                    <h2 class="now-title">Right now</h2>
+                    <dl class="now-list">
+                        <div>
+                            <dt>Studying</dt>
+                            <dd>BCA at Amar Singh College, Srinagar (2026–2029)</dd>
+                        </div>
+                        <div>
+                            <dt>Learning</dt>
+                            <dd>JavaScript, building on HTML, CSS and responsive design</dd>
+                        </div>
+                        <div>
+                            <dt>Next</dt>
+                            <dd>Back-end basics, databases and APIs</dd>
+                        </div>
+                    </dl>
+                </aside>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section about" id="about" aria-labelledby="about-title">
+            <div class="container split">
+                <div class="split-head">
+                    <h2 class="section-title" id="about-title">About</h2>
+                </div>
+                <div class="split-body">
+                    <p class="about-heading">A curious mind from Kashmir, learning one layer at a time.</p>
+                    <p class="about-text">
+                        I'm <strong>Faizan Shafi</strong>, a BCA student at <strong>Amar Singh College,
+                            Srinagar</strong>. I like to learn methodically: get the fundamentals right, then build on
+                        them. I've completed <strong>HTML, CSS and responsive web design</strong>, I'm now working
+                        through <strong>JavaScript</strong>, and I keep up basic skills in <strong>Python</strong> and
+                        <strong>Git</strong>.
+                    </p>
+
+                    <ul class="skills" aria-label="Skills and current level">
+                        <li><span class="skill-name">HTML &amp; CSS</span><span class="skill-level">Completed</span></li>
+                        <li><span class="skill-name">Responsive design</span><span class="skill-level">Completed</span>
+                        </li>
+                        <li><span class="skill-name">JavaScript</span><span class="skill-level">Learning</span></li>
+                        <li><span class="skill-name">Git &amp; GitHub</span><span
+                                class="skill-level">Foundational</span></li>
+                        <li><span class="skill-name">Python</span><span class="skill-level">Basic</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section experience" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <div class="experience-head">
+                    <h2 class="section-title" id="experience-title">Experience</h2>
+                    <p class="experience-intro">Where I've worked on real products and projects, and what I did there.
+                    </p>
+                </div>
+
+                <h3 class="group-label">Work</h3>
+                <article class="role role-featured reveal">
+                    <header class="role-head">
+                        <div>
+                            <h4 class="role-title">Testing, business development &amp; client support</h4>
+                            <p class="role-org">Ematrix Software Solutions · EmvoraERP</p>
+                        </div>
+                        <p class="role-meta">
+                            <time>April 2025</time> – present
+                            <span class="badge">Currently inactive</span>
+                        </p>
+                    </header>
+                    <p class="role-summary">
+                        At Ematrix Software Solutions I worked on EmvoraERP, a SaaS CRM/ERP product for hotels and
+                        travel agencies. My core task was software testing: finding bugs and writing detailed reports
+                        the team could act on. I also supported business development and marketing, helped pitch the
+                        product, spoke directly with clients, and coordinated a small team. It gave me early,
+                        hands-on exposure to how a real software product is tested, sold and supported.
+                    </p>
+                    <ul class="chips" aria-label="Responsibilities">
+                        <li>Software testing</li>
+                        <li>Bug reporting</li>
+                        <li>Business development</li>
+                        <li>Marketing</li>
+                        <li>Client relations</li>
+                        <li>Team coordination</li>
+                    </ul>
+                </article>
+
+                <h3 class="group-label">Independent &amp; team projects</h3>
+                <div class="role-grid">
+                    <article class="role reveal">
+                        <header class="role-head">
+                            <div>
+                                <h4 class="role-title">Content creator</h4>
+                                <p class="role-org">The Kinesthetic Code · Frames Decoded</p>
+                            </div>
+                            <p class="role-meta"><span class="badge">Currently inactive</span></p>
+                        </header>
+                        <p class="role-summary">
+                            I ran my own YouTube channels: The Kinesthetic Code, and Frames Decoded for Hindi content.
+                            Over time I tried several niches, including AI tools, financial tips, fitness and
+                            gaming. I used AI tools such as Gamma, Fliki, DALL·E and Veo alongside InShot to plan,
+                            script and edit videos. Both channels are inactive now, but the work gave me practice in
+                            planning content, writing scripts and fitting AI tools into a real workflow.
+                        </p>
+                        <ul class="chips" aria-label="Skills used">
+                            <li>Scriptwriting</li>
+                            <li>Video editing</li>
+                            <li>AI tools</li>
+                        </ul>
+                    </article>
+
+                    <article class="role reveal">
+                        <header class="role-head">
+                            <div>
+                                <h4 class="role-title">Concept &amp; pitch</h4>
+                                <p class="role-org">Kashmir Kisan Saathi · Team hackathon concept</p>
+                            </div>
+                            <p class="role-meta"><span class="badge">Concept stage</span></p>
+                        </header>
+                        <p class="role-summary">
+                            Kashmir Kisan Saathi is a team concept for a platform that connects farmers in Kashmir
+                            directly with buyers, starting with crops like apples, walnuts and saffron. The plan
+                            covered price tiers, grading, admin verification, transport agents, cold storage, weather
+                            alerts and voice support in Kashmiri, Urdu and Hindi, all with a farmer-first approach.
+                            We structured the pitch as problem, solution, features, impact and feasibility. It has not
+                            been built or deployed.
+                        </p>
+                        <ul class="chips" aria-label="Skills used">
+                            <li>Product thinking</li>
+                            <li>Pitching</li>
+                            <li>Teamwork</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Roadmap -->
+        <section class="section roadmap" id="roadmap" aria-labelledby="roadmap-title">
+            <div class="container split">
+                <div class="split-head">
+                    <h2 class="section-title" id="roadmap-title">Career roadmap</h2>
+                </div>
+                <ol class="timeline">
+                    <li class="timeline-item is-current reveal">
+                        <span class="timeline-marker" aria-hidden="true">1</span>
+                        <div>
+                            <h3>Front-end foundations</h3>
+                            <p>HTML, CSS and responsive design are done. JavaScript is in progress, with the aim of
+                                getting the fundamentals solid before moving on.</p>
+                            <span class="status status-active">In progress</span>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-marker" aria-hidden="true">2</span>
+                        <div>
+                            <h3>Full-stack development</h3>
+                            <p>Back-end technologies, databases, APIs and modern frameworks, building complete
+                                applications from idea to deployment.</p>
+                            <span class="status status-next">Next</span>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-marker" aria-hidden="true">3</span>
+                        <div>
+                            <h3>AI engineering</h3>
+                            <p>Bringing AI into software: machine learning basics, data pipelines and intelligent
+                                systems.</p>
+                            <span class="status">Later</span>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <span class="timeline-marker" aria-hidden="true">4</span>
+                        <div>
+                            <h3>Forward deployed engineering</h3>
+                            <p>Working where engineering meets real-world problems, deploying technical solutions
+                                directly with clients.</p>
+                            <span class="status">Long-term goal</span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-inner">
+                <h2 class="contact-title" id="contact-title">Let's talk</h2>
+                <p class="contact-text">
+                    I'm open to conversations about technology, opportunities and interesting projects.
+                </p>
+                <ul class="contact-links">
+                    <li><a href="mailto:hello@faizanshafi.dev">hello@faizanshafi.dev</a></li>
+                    <li><a href="https://github.com/faizanshafi25" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Srinagar, Kashmir</p>
+            <p>© <span id="year">2026</span> Faizan Shafi</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
